@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navegacion">
+            <img src="Imagenes/item12-deco.png" alt="Logo" class="logo">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="#">Objetivos</a>
+                    <ul class="submenu">
+                        <table class="submenu-table"></table>
+                        <tr>
+                        <td><a href="objetivo1.html">Reduccion del desperdicio de alimentos</a></td>
+                        <td><a href="objetivo1 - copia.html">Energias renovables</a></td>
+                        </tr>
+                        <tr>
+                        <td><a href="objetivo1 - copia (2).html">Reduccion de la huella de carbono</a></td>
+                        <td><a href="objetivo1 - copia (3).html">Uso del agua responsable</a></td>
+                        </tr>
+                        </table>
+                    </ul>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="proceso.php" method="POST">
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Escribe tu nombre" required>
+
+                <label for="last-name">Apellido:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Escribe tu apellido" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ejemplo: 123456@gmail.com" required>
+
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ejemplo: +52 123-456-7890" inputmode="numeric" required pattern="\+?[0-9]{2}\s?[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+
+                <label for="message">¿Cómo podemos ayudarte?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+         <div class="contact-info">
+                <h2>Contáctanos</h2>
+                <p> <strong>
+                    Si tienes alguna pregunta, comentario o requieres más información, no
+                    dudes en ponerte en contacto con nosotros.
+                    Estaremos encantados de ayudarte y responder lo antes posible 
+                    </strong>
+                </p>
+        
+         </div>
+</div>
+</main>
+
+<section class="footer-section">
+    <h2>Redes sociales</h2>
+    <br>
+    <div class="footer-images">
+        <a href="" target="_blank">
+            <img src="Imagenes/facebook.png" alt="Facebook" />
+        </a>
+        <a href="" target="_blank">
+            <img src="Imagenes/instagram.png" alt="Instagram" />
+        </a>
+    </div>
+</section>
+</body>
+</html>
